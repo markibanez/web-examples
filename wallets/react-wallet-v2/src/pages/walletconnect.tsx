@@ -11,8 +11,10 @@ export default function WalletConnectPage() {
   async function onConnect(uri: string) {
     try {
       setLoading(true)
+      console.log(signClient);
       await signClient.pair({ uri })
     } catch (err: unknown) {
+      console.log(err);
       alert(err)
     } finally {
       setUri('')
@@ -22,7 +24,7 @@ export default function WalletConnectPage() {
 
   return (
     <Fragment>
-      <PageHeader title="WalletConnect" />
+      <PageHeader title="R3NT WalletConnect" />
 
       <QrReader onConnect={onConnect} />
 

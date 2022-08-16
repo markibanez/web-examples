@@ -13,7 +13,7 @@ export default function SettingsPage() {
 
   return (
     <Fragment>
-      <PageHeader title="Settings" />
+      <PageHeader title="R3NT Wallet Settings" />
 
       <Text h4 css={{ marginBottom: '$5' }}>
         Packages

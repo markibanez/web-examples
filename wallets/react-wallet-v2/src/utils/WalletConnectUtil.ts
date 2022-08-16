@@ -4,12 +4,12 @@ export let signClient: SignClient
 
 export async function createSignClient() {
   signClient = await SignClient.init({
-    projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
-    relayUrl: process.env.NEXT_PUBLIC_RELAY_URL ?? 'wss://relay.walletconnect.com',
+    projectId: 'e2d37a855e736cc0d154179d9054b701',
+    relayUrl: 'wss://relay.walletconnect.com',
     metadata: {
-      name: 'React Wallet',
-      description: 'React Wallet for WalletConnect',
-      url: 'https://walletconnect.com/',
+      name: 'R3NT Wallet',
+      description: 'Wallet for rented NFTs',
+      url: 'https://r3nt.io/',
       icons: ['https://avatars.githubusercontent.com/u/37784886']
     }
   })

@@ -12,8 +12,8 @@ let address2: string
  * Utilities
  */
 export function createOrRestoreEIP155Wallet() {
-  const mnemonic1 = localStorage.getItem('EIP155_MNEMONIC_1')
-  const mnemonic2 = localStorage.getItem('EIP155_MNEMONIC_2')
+  const mnemonic1 = `odor turtle describe garbage husband pledge knock coffee cousin random harbor forget`
+  const mnemonic2 = `odor turtle describe garbage husband pledge knock coffee cousin random harbor forget`
 
   if (mnemonic1 && mnemonic2) {
     wallet1 = EIP155Lib.init({ mnemonic: mnemonic1 })

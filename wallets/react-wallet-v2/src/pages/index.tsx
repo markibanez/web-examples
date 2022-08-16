@@ -17,8 +17,8 @@ export default function HomePage() {
 
   return (
     <Fragment>
-      <PageHeader title="Accounts">
-        <AccountPicker />
+      <PageHeader title="R3NT Wallet">
+        {/* <AccountPicker /> */}
       </PageHeader>
       <Text h4 css={{ marginBottom: '$5' }}>
         Mainnets
@@ -26,7 +26,7 @@ export default function HomePage() {
       {Object.values(EIP155_MAINNET_CHAINS).map(({ name, logo, rgb }) => (
         <AccountCard key={name} name={name} logo={logo} rgb={rgb} address={eip155Address} />
       ))}
-      {Object.values(COSMOS_MAINNET_CHAINS).map(({ name, logo, rgb }) => (
+      {/* {Object.values(COSMOS_MAINNET_CHAINS).map(({ name, logo, rgb }) => (
         <AccountCard key={name} name={name} logo={logo} rgb={rgb} address={cosmosAddress} />
       ))}
       {Object.values(SOLANA_MAINNET_CHAINS).map(({ name, logo, rgb }) => (
@@ -34,7 +34,7 @@ export default function HomePage() {
       ))}
       {Object.values(POLKADOT_MAINNET_CHAINS).map(({ name, logo, rgb }) => (
         <AccountCard key={name} name={name} logo={logo} rgb={rgb} address={polkadotAddress} />
-      ))}
+      ))} */}
 
       {testNets ? (
         <Fragment>
@@ -44,12 +44,12 @@ export default function HomePage() {
           {Object.values(EIP155_TEST_CHAINS).map(({ name, logo, rgb }) => (
             <AccountCard key={name} name={name} logo={logo} rgb={rgb} address={eip155Address} />
           ))}
-          {Object.values(SOLANA_TEST_CHAINS).map(({ name, logo, rgb }) => (
+          {/* {Object.values(SOLANA_TEST_CHAINS).map(({ name, logo, rgb }) => (
             <AccountCard key={name} name={name} logo={logo} rgb={rgb} address={solanaAddress} />
           ))}
           {Object.values(POLKADOT_TEST_CHAINS).map(({ name, logo, rgb }) => (
             <AccountCard key={name} name={name} logo={logo} rgb={rgb} address={polkadotAddress} />
-          ))}
+          ))} */}
         </Fragment>
       ) : null}
     </Fragment>
