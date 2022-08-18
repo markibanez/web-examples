@@ -42,7 +42,7 @@ export default function SettingsPage() {
       </Row>
 
       <Divider y={2} />
-
+{/*
       <Text css={{ color: '$yellow500', marginBottom: '$5', textAlign: 'left', padding: 0 }}>
         Warning: mnemonics and secret keys are provided for development purposes only and should not
         be used elsewhere!
@@ -67,7 +67,7 @@ export default function SettingsPage() {
       </Text>
       <Card bordered borderWeight="light" css={{ minHeight: '215px', wordWrap: 'break-word' }}>
         <Text css={{ fontFamily: '$mono' }}>{solanaWallets[solanaAddress].getSecretKey()}</Text>
-      </Card>
+      </Card> */}
     </Fragment>
   )
 }
